@@ -6,5 +6,11 @@ const person ={
     }
 };
 
-person.greet();
-//console.log(person)
+const hobbies = ['Sports', 'Cooking', 'Reading'];
+// for(let hobby of hobbies){
+//     console.log(hobby);
+// }
+
+console.log(hobbies.map(hobby=> 'Hobby: ' + hobby));
+hobbies.pop('Baking');
+console.log(hobbies);
