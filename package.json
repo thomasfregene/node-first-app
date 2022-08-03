@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/thomasfregene/node-first-app/issues"
   },
-  "homepage": "https://github.com/thomasfregene/node-first-app#readme"
+  "homepage": "https://github.com/thomasfregene/node-first-app#readme",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
 }
