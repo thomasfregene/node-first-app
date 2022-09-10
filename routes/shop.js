@@ -10,8 +10,9 @@ const rootDir = require('../util/path');
 
 
 router.get('/', (req, res, next)=>{
-    res.render('shop');
-    // console.log('shop.js',adminData.products);
+    const products=adminData.products;
+    res.render('shop',{prods:products, docTitle:"Shop"});
+    console.log('shop.js',products);
     // res.sendFile(path.join(rootDir, 'views', 'shop.html'));
 });
 
