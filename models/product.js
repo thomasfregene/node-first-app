@@ -14,8 +14,6 @@ const getProductsFromFile = (cb) => {
     } else {
       cb(JSON.parse(fileContent));
     }
-
-    //   console.log(JSON.parse(fileContent))
   });
 };
 

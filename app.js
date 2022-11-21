@@ -5,17 +5,13 @@ const express = require('express');
 const path = require('path');
 
 const errorController = require('./controllers/error')
-//const expressHbs = require('express-handlebars');
-// const { engine } = require('express-handlebars');
 
 
 const app = express();
 
-//app.engine('hbs', expressHbs({layoutsDir:'views/layouts', defaultLayout:'main'})) //hbs: handlebars
-// app.engine('handlebars', engine({ extname: '.hbs', defaultLayout: "main"}));
+// app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
 
-app.set('view engine', 'pug');
-// app.set('view engine', 'handlebars');
 app.set('views', 'views');
 
 app.use(express.static(path.join(__dirname, 'public')))
