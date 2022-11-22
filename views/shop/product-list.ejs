@@ -16,12 +16,11 @@
 
                         </header>
                         <div class="card__image">
-                            <!-- <img src="https://cdn.pixabay.com/photo/2022/07/20/18/44/reading-7334749_1280.png", alt="", height="300px", width="300px"> -->
-                            <img src="../public/photo/kemi.png", alt="", height="300px", width="300px">
+                            <img src="<%= product.imageUrl %>", alt="<%= product.title %>", height="300px", width="300px">
                         </div>
                         <div class="card__content">
-                            <h2 class="product__class">$19.99</h2>
-                            <p class="product__description">interesting book</p>
+                            <h2 class="product__class">$<%= product.price %></h2>
+                            <p class="product__description"><%= product.description %></p>
                         </div>
                         <div class="card__actions">
                             <button class="btn">Add to Cart</button>
