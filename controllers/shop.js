@@ -11,6 +11,12 @@ exports.getProducts = (req, res, next) => {
 //   console.log("shop.js", products);
 };
 
+exports.getProduct = (req, res, next) =>{
+  const prodId = req.params.productId;
+  console.log(prodId);
+  res.redirect('/');
+}
+
 exports.getIndex = (req, res, next)=>{
   Product.fetchAll((products) => {
     // console.log(response)
@@ -28,7 +34,7 @@ exports.getCart = (req, res, next) =>{
 exports.getOrders = (req, res, next) =>{
   res.render('shop/orders',{
     path:'/orders',
-    pageTitle: 'Your Cart'
+    pageTitle: 'Your Orders'
   })
 };
 
